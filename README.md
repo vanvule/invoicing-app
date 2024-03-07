@@ -14,6 +14,8 @@ We would like you to create an invoicing app. The features it should include:
 
 Your backend can be anything, and does not have to work. If you would like to use a mocked-out interface, that is fine (even static data in code is ok).
 
+You can use design materials from this source: [Behance](https://www.behance.net/gallery/190762531/Microinvoice-UIUX-Case-Study)
+
 #### Extra credit features
 
  - [ ] Add a due date to an invoice
@@ -30,4 +32,4 @@ If you have any questions, please ask!
 
 To complete your homework, please fork this repo and commit your work to your fork. When you are ready for us to look at it, give us access to your fork so we can review and run it.
 
-Timeline estimation: 3 working days.
+Timeline estimation: 7 working days.
