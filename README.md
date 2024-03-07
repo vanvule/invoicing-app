@@ -4,10 +4,15 @@ As part of our application process, we'd like to see what you can produce by giv
 
 ## The assignment
 
+![](assets/create-invoice.png)
+
+![](assets/list-invoice.png)
+
 We would like you to create an invoicing app. The features it should include:
 
  - [ ] Create a new invoice
- - [ ] Add line items to the invoice. Line items may include hours of work at a certain rate, work-related expenses, materials, labor, etc.
+ - [ ] Add line items to the invoice. 
+   Line items may item name, quantity, unit, unit price, calculated price, etc.
  - [ ] Add notes to the invoice, including possibly how to pay it, where to send checks, etc.
  - [ ] Send the invoice via email (does not have to actually send emails, but if it does, great!)
  - [ ] View invoices including status (paid, outstanding, late, etc.)
@@ -20,6 +25,7 @@ You can use design materials from this source: [Behance](https://www.behance.net
 
  - [ ] Add a due date to an invoice
  - [ ] View late invoices, or even better, alert when an invoice is late
+-  [ ] Add filters for listing page
  - [ ] Polish and UX
  - [ ] Highly reusable components
  - [ ] Tests
@@ -28,8 +34,13 @@ You can use design materials from this source: [Behance](https://www.behance.net
 
 You can use any tools at your choice to accomplish this task.
 
+- ReactJS framework
+- ES6/7 Syntax - you pick the stages
+
+or anything else that seems the best familiar with you
+
 If you have any questions, please ask!
 
 To complete your homework, please fork this repo and commit your work to your fork. When you are ready for us to look at it, give us access to your fork so we can review and run it.
 
-Timeline estimation: 7 working days.
+Timeline estimation: 3 working days.
