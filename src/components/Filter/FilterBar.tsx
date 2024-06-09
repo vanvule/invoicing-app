@@ -71,6 +71,7 @@ export const FilterBar: React.FC = () => {
           <Option
             value="All statuses"
             options={[
+              { label: 'All statuses', value: 'All' },
               { label: 'Draft', value: 'Draft' },
               { label: 'Paid', value: 'Paid' },
               { label: 'Not Paid', value: 'Not Paid' },

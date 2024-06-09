@@ -3,46 +3,14 @@ import { Button, DatePicker, Flex, Form, Input, InputNumber, Layout, message, Se
 import React, { useEffect, useRef, useState } from 'react';
 import formData from './formData.json';
 
-import { Typography } from 'antd';
 import { addInvoice } from '../../stored/stored';
 import { FeeSummary } from './FeeSummary';
+import { FormData, FormField, Item } from './createInvoiceForm.type';
+import { getStatusClassNames } from 'antd/es/_util/statusUtils';
 
 
 const { Header, Content, Footer } = Layout;
 const { Option } = Select;
-
-interface Validation {
-  required: boolean;
-  message: string;
-  min?: number;
-}
-
-interface FormField {
-  id: string;
-  label: string;
-  type: 'number' | 'text' | 'dateTime' | 'SingleSelect';
-  options?: string[];
-  validation?: Validation;
-}
-
-interface TableItem {
-  id: string;
-  label: string;
-  type: 'number' | 'text';
-  validation?: Validation;
-}
-
-interface FormData {
-  formFields: FormField[];
-  tableItems: TableItem[];
-}
-
-interface Item {
-  details: string;
-  quantity: number;
-  price: number;
-  amount: number;
-}
 
 const initialItem: Item = {
   details: '',
@@ -137,12 +105,16 @@ export const CreateInvoiceForm: React.FC = () => {
   }));
 
   const onFinish = async (values: any) => {
+    const getStatus = ():'Paid' | 'Not Paid' => {
+      return items.some(item => item !== initialItem) ? 'Paid' : 'Not Paid';
+    }
     await addInvoice({
       ...values,
       items,
-      status: 'Inprogress',
+      status: getStatus(),
     });
     message.success('Form submitted successfully!');
+    window.location.href = '/all-invoices';
   };
 
   const handleSave = async (type:string) => {
@@ -152,6 +124,7 @@ export const CreateInvoiceForm: React.FC = () => {
       status: type,
     });
     message.success('Form saved as a draft!');
+    window.location.href = '/all-invoices';
   }
 
   return (
@@ -261,6 +234,7 @@ export const CreateInvoiceForm: React.FC = () => {
               htmlType="button"
               onClick={() => handleSave('Draft')}
               icon={<FileAddOutlined />}
+              disabled={!formRef.current?.isFieldsTouched()}
             >
               Save as a draft
             </Button>
