@@ -1,0 +1,58 @@
+[
+  {
+    "label": "Home",
+    "key": "home",
+    "icon": "HomeTwoTone",
+    "route": "/"
+  },
+  {
+    "label": "Invoice",
+    "key": "invoice",
+    "icon": "BookTwoTone",
+    "children": [
+      {
+        "label": "All invoices",
+        "key": "invoice-all",
+        "icon": "PlusSquareTwoTone",
+        "route": "/all-invoices"
+      },
+      {
+        "label": "Create New",
+        "key": "invoice-create",
+        "icon": "PlusSquareTwoTone",
+        "route": "/create-invoice"
+      },
+      {
+        "label": "Drafts",
+        "key": "invoice-drafts",
+        "icon": "PlusSquareTwoTone",
+        "route": "/invoice-drafts"
+      }
+    ]
+  },
+  {
+    "label": "Contractors",
+    "key": "contractors",
+    "icon": "BookTwoTone",
+    "children": [
+      {
+        "label": "Contractors-sub1",
+        "key": "contractors--1",
+        "icon": "PlusSquareTwoTone",
+        "route": "/contractors-sub1"
+      },
+      {
+        "label": "Contractors-sub2",
+        "key": "contractors--2",
+        "icon": "PlusSquareTwoTone",
+        "route": "/contractors-sub2"
+      }
+    ]
+  },
+  {
+    "label": "Products and Services",
+    "key": "ProductsServices",
+    "icon": "ProductFilled",
+    "route": "/products-services"
+  }
+]

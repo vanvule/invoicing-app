@@ -1,0 +1,151 @@
+{
+  "formFields": [
+    {
+      "id": "documentNumber",
+      "label": "Document Number",
+      "type": "number",
+      "validation": {
+        "required": true,
+        "message": "Document Number is required"
+      }
+    },
+    {
+      "id": "documentType",
+      "label": "Document Type",
+      "type": "text",
+      "validation": {
+        "required": true,
+        "message": "Document Type is required"
+      }
+    },
+    {
+      "id": "prepared",
+      "label": "Prepared",
+      "type": "SingleSelect",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3"
+      ],
+      "validation": {
+        "required": true,
+        "message": "Prepared selection is required"
+      }
+    },
+    {
+      "id": "contractor",
+      "label": "Contractor",
+      "type": "SingleSelect",
+      "options": [
+        "Contractor 1",
+        "Contractor 2",
+        "Contractor 3"
+      ],
+      "validation": {
+        "required": true,
+        "message": "Contractor selection is required"
+      }
+    },
+    {
+      "id": "format",
+      "label": "Format",
+      "type": "SingleSelect",
+      "options": [
+        "Format 1",
+        "Format 2",
+        "Format 3"
+      ],
+      "validation": {
+        "required": true,
+        "message": "Format selection is required"
+      }
+    },
+    {
+      "id": "bankAccount",
+      "label": "Bank Account",
+      "type": "SingleSelect",
+      "options": [
+        "Account 1",
+        "Account 2",
+        "Account 3"
+      ],
+      "validation": {
+        "required": true,
+        "message": "Bank Account selection is required"
+      }
+    },
+    {
+      "id": "invoiceDate",
+      "label": "Invoice Date",
+      "type": "dateTime",
+      "validation": {
+        "required": true,
+        "message": "Invoice Date is required"
+      }
+    },
+    {
+      "id": "dueDate",
+      "label": "Due Date",
+      "type": "dateTime",
+      "validation": {
+        "required": true,
+        "message": "Due Date is required"
+      }
+    },
+    {
+      "id": "payment",
+      "label": "Payment",
+      "type": "SingleSelect",
+      "options": [
+        "Payment 1",
+        "Payment 2",
+        "Payment 3"
+      ],
+      "validation": {
+        "required": true,
+        "message": "Payment selection is required"
+      }
+    }
+  ],
+  "tableItems": [
+    {
+      "id": "details",
+      "label": "Details",
+      "type": "text",
+      "validation": {
+        "required": true,
+        "message": "Details are required"
+      }
+    },
+    {
+      "id": "quantity",
+      "label": "Quantity",
+      "type": "number",
+      "validation": {
+        "required": true,
+        "message": "Quantity is required",
+        "min": 1
+      }
+    },
+    {
+      "id": "price",
+      "label": "Price",
+      "type": "number",
+      "validation": {
+        "required": true,
+        "message": "Price is required",
+        "min": 0
+      }
+    },
+    {
+      "id": "amount",
+      "label": "Amount",
+      "type": "number",
+      "validation": {
+        "required": true,
+        "message": "Amount is required",
+        "min": 0
+      }
+    }
+  ]
+}
